@@ -4,7 +4,7 @@ using System;
 
 namespace Library
 {
-    public class Node<T>
+    public class Node<T> 
     {
         private T item;
 
@@ -32,6 +32,11 @@ namespace Library
         public void AddChildren(Node<T> n)
         {
             this.children.Add(n);
+        }
+
+        internal static void Accept(AcceptVisit acceptVisit)
+        {
+            throw new NotImplementedException();
         }
     }
 }

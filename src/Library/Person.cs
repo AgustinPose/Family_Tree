@@ -11,5 +11,10 @@ namespace Library
             this.Name = name;
             this.Age = age;
         }
+
+        internal static void Accept(AcceptVisit acceptVisit)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
