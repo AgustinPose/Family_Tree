@@ -7,13 +7,13 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            Node n1 = new Node(1);
-            Node n2 = new Node(2);
-            Node n3 = new Node(3);
-            Node n4 = new Node(4);
-            Node n5 = new Node(5);
-            Node n6 = new Node(6);
-            Node n7 = new Node(7);
+            Node<int> n1 = new Node<int>(1);
+            Node<int> n2 = new Node<int>(2);
+            Node<int> n3 = new Node<int>(3);
+            Node<int> n4 = new Node<int>(4);
+            Node<int> n5 = new Node<int>(5);
+            Node<int> n6 = new Node<int>(6);
+            Node<int> n7 = new Node<int>(7);
 
             n1.AddChildren(n2);
             n1.AddChildren(n3);
@@ -25,6 +25,16 @@ namespace Program
             n3.AddChildren(n7);
 
             // visitar el árbol aquí
+
+        
+            Node<Person> Jaime = new Node<Person>(new Person("Jaime", 54));
+            Node<Person> Rodrigo = new Node<Person>(new Person("Rodrigo", 32));
+            Node<Person> Ignacio = new Node<Person>(new Person("Ignacio", 19));
+            Node<Person> Agustina = new Node<Person>(new Person("Agustina", 90));
+            Node<Person> Pepe = new Node<Person>(new Person("Pepe", 67));
+            Node<Person> Roberto = new Node<Person>(new Person("Roberto", 25));
+            Node<Person> Sofia = new Node<Person>(new Person("Sofia", 19));
+            Node<Person> Martina = new Node<Person>(new Person("Martina", 21));
         }
     }
 }
