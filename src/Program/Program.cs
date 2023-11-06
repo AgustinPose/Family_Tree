@@ -47,10 +47,14 @@ namespace Program
 
             var acceptVisit = new AcceptVisit();
 
-             Jaime.Accept(acceptVisit);
+            Jaime.Accept(acceptVisit); // Inicia la visita desde el nodo raíz
 
-            int totalAge = acceptVisit.totalAge;
+            int totalAge = acceptVisit.TotalAge;
             Console.WriteLine("Total Age: " + totalAge);
+
+
+            //Jaime.Accept(acceptVisit);
+            //Console.WriteLine("Total Age: " + acceptVisit.TotalAge);
         }
     }
 }
