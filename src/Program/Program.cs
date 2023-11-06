@@ -5,6 +5,8 @@ namespace Program
 {
     class Program
     {
+        Visitor acceptVisit = new AcceptVisit();
+
         static void Main(string[] args)
         {
             Node<int> n1 = new Node<int>(1);
@@ -35,6 +37,20 @@ namespace Program
             Node<Person> Roberto = new Node<Person>(new Person("Roberto", 25));
             Node<Person> Sofia = new Node<Person>(new Person("Sofia", 19));
             Node<Person> Martina = new Node<Person>(new Person("Martina", 21));
+            Jaime.AddChildren(Rodrigo);
+            Rodrigo.AddChildren(Ignacio);
+            Ignacio.AddChildren(Agustina);
+            Agustina.AddChildren(Pepe);
+            Pepe.AddChildren(Roberto);
+            Roberto.AddChildren(Sofia);
+            Sofia.AddChildren(Martina);
+
+            var acceptVisit = new AcceptVisit();
+
+             Jaime.Accept(acceptVisit);
+
+            int totalAge = acceptVisit.totalAge;
+            Console.WriteLine("Total Age: " + totalAge);
         }
     }
 }
