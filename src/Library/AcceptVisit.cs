@@ -1,16 +1,17 @@
 using System;
 namespace Library
 {
-    public class AcceptVisit : IVisitor
+    public class AcceptVisit : Visitor
     {
-        public void Visit(Node<object> node)
+
+        public override void Visit(Node<object> node)
         {
-            Node<object>.Accept(this);
+            throw new NotImplementedException();
         }
 
-        public void Visit(Person person)
+        public override void Visit(Person person)
         {
-            Person.Accept(this);
+            throw new NotImplementedException();
         }
     }
 }

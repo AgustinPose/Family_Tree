@@ -36,7 +36,7 @@ namespace Library
 
         internal static void Accept(AcceptVisit acceptVisit)
         {
-            throw new NotImplementedException();
+            Node<T>.Accept(acceptVisit);
         }
     }
 }
